@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
 
 /* shared style*/
 body
@@ -67,7 +73,9 @@ nav li a{
 }
 
 /*this is banner section start*/
-
+.container{
+    margin-top: 40px;
+}
 
 
 .text-container{
@@ -151,6 +159,80 @@ main{
 
 /*feature section end*/
 
+.featuredes-container{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+   
+}
+.featuere-content{
+    flex-direction: column;
+    margin-top: 20px;
+   margin-left: 100px;
+   margin-right: 50px;
+    gap: 24px;
+}
+
+.feature-sub-content{
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    padding: 30px ;
+    margin-bottom: 20px;
+}
+
+.feature-title1{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #131313;
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+
+.feature-title{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #131313;
+}
+.feature-descrption{
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.feature-img{
+    height: 90%;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.experience{
+    border-radius: 8px;
+    background-color: #FF900E;
+    padding: 30px;
+    color: #FFF;
+    width: 350px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+    
+   
+}
+
+.experience, h2{
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 0;
+
+}
+.experience p{
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+
+
+
+
 
 /*responsive media quires*/
 /*responsive mobile device*/
@@ -170,8 +252,26 @@ nav{
 .feature-img{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    margin: 0 10px;
     
 
+}
+.featuredes-container{
+    flex-direction: column;
+   margin-right: 25px ;
+}
+.feature-badge img{
+  width: 80%;
+  
+    
+}
+
+.experience{
+    padding: 20px; 
+    width: 80%;
+}
+.feature-badge{
+margin-left: 30px;
 }
 }
 
@@ -192,6 +292,15 @@ nav, .feature-container {
     padding-right: 20px;
 
 }
+.featuredes-container{
+    flex-direction: column;
+   margin-right: 30px ;
+
+}
 
 
+.experience{
+    padding: 20px; 
+   
+}
 }
